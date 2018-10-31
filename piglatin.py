@@ -11,7 +11,7 @@ def strip_and_listify(str1, char2):
 
 
 
-consonant_clusters = "bl–, cl–, fl–, gl–, pl–, sl-, br–, cr–, dr–, fr–, gr–,pr–, tr–, sc–, sk–, sm–, sn–, sp–, st–, sw–, tw–, qu-"
+consonant_clusters = "bl–, cl–, fl–, gl–, pl–, sl-, br–, cr–, dr–, fr–, gr–,pr–, tr–, sc–, sk–, sm–, sn–, sp–, st–, sw–, tw–, qu–"
 
 consonant_clusters_fixed = strip_and_listify(consonant_clusters, ",")
 
