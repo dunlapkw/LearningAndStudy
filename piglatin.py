@@ -1,3 +1,5 @@
+# coding: utf-8
+
 def strip_and_listify(str1, char2):
     split_string = str1.strip().split(char2)
     stripped_string = []
@@ -10,16 +12,14 @@ def strip_and_listify(str1, char2):
     return stripped_string
 
 
-
 consonant_clusters = "bl–, cl–, fl–, gl–, pl–, sl-, br–, cr–, dr–, fr–, gr–,pr–, tr–, sc–, sk–, sm–, sn–, sp–, st–, sw–, tw–, qu–"
 
 consonant_clusters_fixed = strip_and_listify(consonant_clusters, ",")
 
+
 def pig_latin_translator(string, terminator):
     split_string = string.split()
     print(split_string)
-    vowel_suffix = 'yay'
-    consonant_suffix = 'ay'
     vowels = ['a', 'e', 'i', 'o', 'u']
     final_string = ""
     for word in split_string:
@@ -37,9 +37,8 @@ def pig_latin_translator(string, terminator):
             p_latin_word_consonant = p_latin_root + p_latin_suffix + 'ay'
             final_string += p_latin_word_consonant + " "
     final_string = final_string[:-1] + terminator
-    final_string_output = final_string.capitalize().replace(',','')
+    final_string_output = final_string.capitalize().replace(',', '')
     return final_string_output
-
 
 
 # Testing
