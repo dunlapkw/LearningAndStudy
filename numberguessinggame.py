@@ -1,5 +1,4 @@
 # coding: utf-8
-# this file intentionally left blank as I'm going to code it again from my last attempt.
 import random
 
 print("Welcome to the guessing game! I'm thinking of a number between 1 and 50. Take a guess below and see what you "
