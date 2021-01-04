@@ -1,13 +1,13 @@
-def leapyeardetector(year):
-    isnot = "This year is not a leap year."
-    isly = "This was a leap year!"
+def leap_year_detector(year):
+    is_not = "This year is not a leap year."
+    is_ly = "This was a leap year!"
     if year % 4 == 0 and year % 100 != 0:
-        return isly
+        return is_ly
     elif year % 400 == 0:
-        return isly
+        return is_ly
     else:
-        return isnot
+        return is_not
 
 
 print("Please input a year.")
-print(leapyeardetector((int(input()))))
+print(leap_year_detector((int(input()))))
